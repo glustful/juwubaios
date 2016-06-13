@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NewProductInMarketFilterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kd-OS-UgQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN6-hO-isT" userLabel="Button1" customClass="CustomButton">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="综合">
+                                <color key="titleColor" red="1" green="0.0" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doNewProductViewClickAction:" destination="iN0-l3-epB" eventType="touchDown" id="rRM-eX-cDq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5On-DY-ByY" userLabel="Button3">
+                            <rect key="frame" x="160" y="0.0" width="80" height="44"/>
+                            <state key="normal" title="价格">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doNewProductViewClickAction:" destination="iN0-l3-epB" eventType="touchDown" id="YOe-IY-2rL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3z-fC-UWd" userLabel="Button2" customClass="CustomButton">
+                            <rect key="frame" x="80" y="0.0" width="80" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="销量">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doNewProductViewClickAction:" destination="iN0-l3-epB" eventType="touchDown" id="JiC-QT-0OX"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CompositeFilter.png" translatesAutoresizingMaskIntoConstraints="NO" id="abw-8r-drF">
+                            <rect key="frame" x="59" y="17" width="21" height="11"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="21" id="5PF-zf-bjQ"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PriceFilter.png" translatesAutoresizingMaskIntoConstraints="NO" id="EbB-a9-D6Y">
+                            <rect key="frame" x="219" y="17" width="13" height="11"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="11" id="GCC-ge-cJu"/>
+                                <constraint firstAttribute="width" constant="13" id="Scv-x2-Lpv"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fiter.png" translatesAutoresizingMaskIntoConstraints="NO" id="haP-tn-AE2">
+                            <rect key="frame" x="297" y="8" width="23" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="23" id="AKH-Lb-Vte"/>
+                                <constraint firstAttribute="height" constant="28" id="SF1-9X-Z6v"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odZ-21-cTj" userLabel="Button4" customClass="CustomButton">
+                            <rect key="frame" x="240" y="0.0" width="80" height="44"/>
+                            <state key="normal" title="筛选">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doNewProductViewClickAction:" destination="iN0-l3-epB" eventType="touchDown" id="dO1-Ns-Xyz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="haP-tn-AE2" firstAttribute="top" secondItem="4kd-OS-UgQ" secondAttribute="top" constant="8" id="2G5-fo-GhK"/>
+                        <constraint firstAttribute="trailing" secondItem="odZ-21-cTj" secondAttribute="trailing" id="52x-3b-SCt"/>
+                        <constraint firstItem="odZ-21-cTj" firstAttribute="leading" secondItem="5On-DY-ByY" secondAttribute="trailing" id="5c7-pI-I9Q"/>
+                        <constraint firstItem="abw-8r-drF" firstAttribute="top" secondItem="4kd-OS-UgQ" secondAttribute="top" constant="17" id="9Tq-im-auw"/>
+                        <constraint firstItem="5On-DY-ByY" firstAttribute="top" secondItem="fN6-hO-isT" secondAttribute="top" id="Ddm-hQ-jsN"/>
+                        <constraint firstItem="odZ-21-cTj" firstAttribute="leading" secondItem="EbB-a9-D6Y" secondAttribute="trailing" constant="8" id="E0H-Cf-nmB"/>
+                        <constraint firstItem="EbB-a9-D6Y" firstAttribute="top" secondItem="4kd-OS-UgQ" secondAttribute="top" constant="17" id="F6f-Im-ggK"/>
+                        <constraint firstItem="odZ-21-cTj" firstAttribute="top" secondItem="fN6-hO-isT" secondAttribute="top" id="HTo-LI-x9S"/>
+                        <constraint firstItem="g3z-fC-UWd" firstAttribute="leading" secondItem="abw-8r-drF" secondAttribute="trailing" id="JCK-WZ-ZuQ"/>
+                        <constraint firstItem="5On-DY-ByY" firstAttribute="width" secondItem="fN6-hO-isT" secondAttribute="width" id="LqZ-Pm-sGB"/>
+                        <constraint firstItem="odZ-21-cTj" firstAttribute="width" secondItem="fN6-hO-isT" secondAttribute="width" id="NQ2-7J-Okr"/>
+                        <constraint firstItem="fN6-hO-isT" firstAttribute="leading" secondItem="4kd-OS-UgQ" secondAttribute="leading" id="UEW-nz-gUV"/>
+                        <constraint firstItem="g3z-fC-UWd" firstAttribute="top" secondItem="fN6-hO-isT" secondAttribute="top" id="Vh6-3r-WAf"/>
+                        <constraint firstAttribute="bottom" secondItem="fN6-hO-isT" secondAttribute="bottom" id="XGx-Za-AkI"/>
+                        <constraint firstAttribute="bottom" secondItem="abw-8r-drF" secondAttribute="bottom" constant="16" id="Xzv-40-ory"/>
+                        <constraint firstItem="g3z-fC-UWd" firstAttribute="leading" secondItem="fN6-hO-isT" secondAttribute="trailing" id="bDl-MK-7a7"/>
+                        <constraint firstAttribute="trailing" secondItem="haP-tn-AE2" secondAttribute="trailing" id="cDX-9l-t73"/>
+                        <constraint firstItem="odZ-21-cTj" firstAttribute="bottom" secondItem="fN6-hO-isT" secondAttribute="bottom" id="co0-Jj-3kI"/>
+                        <constraint firstItem="g3z-fC-UWd" firstAttribute="leading" secondItem="fN6-hO-isT" secondAttribute="trailing" id="f25-6n-AXG"/>
+                        <constraint firstItem="g3z-fC-UWd" firstAttribute="width" secondItem="fN6-hO-isT" secondAttribute="width" id="fJc-zz-ORL"/>
+                        <constraint firstItem="5On-DY-ByY" firstAttribute="bottom" secondItem="fN6-hO-isT" secondAttribute="bottom" id="khl-by-3XR"/>
+                        <constraint firstItem="fN6-hO-isT" firstAttribute="top" secondItem="4kd-OS-UgQ" secondAttribute="top" id="mxN-l7-Kua"/>
+                        <constraint firstAttribute="height" constant="44" id="rcJ-h8-9GZ"/>
+                        <constraint firstItem="5On-DY-ByY" firstAttribute="leading" secondItem="g3z-fC-UWd" secondAttribute="trailing" id="vQZ-k9-zyZ"/>
+                        <constraint firstItem="g3z-fC-UWd" firstAttribute="bottom" secondItem="fN6-hO-isT" secondAttribute="bottom" id="vWh-8S-n7X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4kd-OS-UgQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="K4C-Mh-OC1"/>
+                <constraint firstAttribute="bottom" secondItem="4kd-OS-UgQ" secondAttribute="bottom" id="jSb-Gb-sd6"/>
+                <constraint firstAttribute="trailing" secondItem="4kd-OS-UgQ" secondAttribute="trailing" id="k8e-8s-cAG"/>
+                <constraint firstItem="4kd-OS-UgQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tUn-Ox-WnI"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="jSb-Gb-sd6"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="117" y="258"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CompositeFilter.png" width="14" height="7"/>
+        <image name="Fiter.png" width="22" height="22"/>
+        <image name="PriceFilter.png" width="12" height="6"/>
+    </resources>
+</document>

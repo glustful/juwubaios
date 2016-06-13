@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GoodsTopCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zci-2z-Ffe">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                        <state key="normal" backgroundImage="adErrorImage.png"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="zci-2z-Ffe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8bq-FQ-jrH"/>
+                <constraint firstAttribute="trailing" secondItem="zci-2z-Ffe" secondAttribute="trailing" id="HCu-mn-GDx"/>
+                <constraint firstAttribute="bottom" secondItem="zci-2z-Ffe" secondAttribute="bottom" id="J07-xl-ldy"/>
+                <constraint firstItem="zci-2z-Ffe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NPc-8o-U9N"/>
+            </constraints>
+            <connections>
+                <outlet property="goodsAdIconClick" destination="zci-2z-Ffe" id="JdT-T5-SEn"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="adErrorImage.png" width="300" height="200"/>
+    </resources>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="2sz-dR-rSh" userLabel="My Entering Cell" customClass="MySuggestionsCell">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2sz-dR-rSh" id="apR-xL-bsP">
+                <rect key="frame" x="0.0" y="0.0" width="504" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyEntering.png" translatesAutoresizingMaskIntoConstraints="NO" id="L8d-UL-QMQ">
+                        <rect key="frame" x="8" y="28" width="30" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="68E-Hy-TJN"/>
+                            <constraint firstAttribute="height" constant="32" id="nIA-f8-iCY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="反馈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfi-cS-116">
+                        <rect key="frame" x="46" y="34" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="6p2-bv-QRK"/>
+                            <constraint firstAttribute="height" constant="21" id="cDd-07-jMC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SepartorLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="ivt-8P-c2M">
+                        <rect key="frame" x="-2" y="-2" width="508" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Lo9-MU-7Zw"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNk-kh-5Rr" userLabel="Separtor">
+                        <rect key="frame" x="-2" y="73" width="508" height="1"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.87843137250000003" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1Ue-B7-9Vb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="L8d-UL-QMQ" firstAttribute="top" secondItem="ivt-8P-c2M" secondAttribute="bottom" constant="10" id="B70-pA-iDM"/>
+                    <constraint firstItem="ivt-8P-c2M" firstAttribute="top" secondItem="apR-xL-bsP" secondAttribute="topMargin" constant="-10" id="BOW-QK-QVt"/>
+                    <constraint firstItem="zfi-cS-116" firstAttribute="leading" secondItem="L8d-UL-QMQ" secondAttribute="trailing" constant="8" id="Fhl-At-btA"/>
+                    <constraint firstItem="L8d-UL-QMQ" firstAttribute="centerY" secondItem="apR-xL-bsP" secondAttribute="centerY" id="Ihl-gK-v2c"/>
+                    <constraint firstItem="zfi-cS-116" firstAttribute="centerY" secondItem="L8d-UL-QMQ" secondAttribute="centerY" id="K6O-eR-Lb2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="zNk-kh-5Rr" secondAttribute="bottom" constant="-10" id="NF7-8f-ioW"/>
+                    <constraint firstItem="zfi-cS-116" firstAttribute="centerY" secondItem="apR-xL-bsP" secondAttribute="centerY" id="QeH-XS-7tz"/>
+                    <constraint firstItem="ivt-8P-c2M" firstAttribute="leading" secondItem="apR-xL-bsP" secondAttribute="leadingMargin" constant="-10" id="SVt-QI-g7N"/>
+                    <constraint firstItem="L8d-UL-QMQ" firstAttribute="leading" secondItem="apR-xL-bsP" secondAttribute="leadingMargin" id="axR-hn-iKo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zNk-kh-5Rr" secondAttribute="trailing" constant="-10" id="fCY-VZ-cgA"/>
+                    <constraint firstItem="L8d-UL-QMQ" firstAttribute="top" secondItem="apR-xL-bsP" secondAttribute="topMargin" constant="5" id="k0i-sD-BCq"/>
+                    <constraint firstItem="zNk-kh-5Rr" firstAttribute="top" secondItem="L8d-UL-QMQ" secondAttribute="bottom" constant="10" id="kFS-o3-y8K"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ivt-8P-c2M" secondAttribute="trailing" constant="-10" id="ot3-4Z-aoC"/>
+                    <constraint firstItem="zNk-kh-5Rr" firstAttribute="leading" secondItem="apR-xL-bsP" secondAttribute="leadingMargin" constant="-10" id="ttd-Qy-BZU"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Ihl-gK-v2c"/>
+                        <exclude reference="k0i-sD-BCq"/>
+                        <exclude reference="QeH-XS-7tz"/>
+                        <exclude reference="kFS-o3-y8K"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="815" y="248.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MyEntering.png" width="36" height="37"/>
+        <image name="SepartorLine.png" width="320" height="10"/>
+    </resources>
+</document>

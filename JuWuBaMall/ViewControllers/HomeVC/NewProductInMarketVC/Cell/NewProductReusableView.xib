@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GL2-QK-i18" customClass="NewProductReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhn-SB-HHl" customClass="TitleButton">
+                    <rect key="frame" x="240" y="0.0" width="80" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="imageEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="筛选" image="Attention_Select.png">
+                        <color key="titleColor" red="0.60973478619999999" green="0.60025185029999995" blue="0.61705900489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="筛选" image="Attention_Select.png">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="GL2-QK-i18" eventType="touchUpInside" id="ai4-Bj-XT6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWs-2X-45L" customClass="TitleButton">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="综合">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="综合">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="GL2-QK-i18" eventType="touchUpInside" id="AIl-r9-EnZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUw-MF-K1b" customClass="TitleButton">
+                    <rect key="frame" x="80" y="0.0" width="80" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="销量">
+                        <color key="titleColor" red="0.60973478619999999" green="0.60025185029999995" blue="0.61705900489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="销量">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="GL2-QK-i18" eventType="touchUpInside" id="hrt-8C-oku"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sk-re-UHX" customClass="TitleButton">
+                    <rect key="frame" x="160" y="0.0" width="80" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="价格">
+                        <color key="titleColor" red="0.60973478619999999" green="0.60025185029999995" blue="0.61705900489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="价格">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="GL2-QK-i18" eventType="touchUpInside" id="taP-yq-pBD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="qhn-SB-HHl" firstAttribute="width" secondItem="4Sk-re-UHX" secondAttribute="width" id="2uD-3z-Sr9"/>
+                <constraint firstItem="4Sk-re-UHX" firstAttribute="leading" secondItem="WUw-MF-K1b" secondAttribute="trailing" id="4JH-7c-v8w"/>
+                <constraint firstItem="gWs-2X-45L" firstAttribute="leading" secondItem="GL2-QK-i18" secondAttribute="leading" id="9eV-Ir-Oto"/>
+                <constraint firstItem="4Sk-re-UHX" firstAttribute="height" secondItem="WUw-MF-K1b" secondAttribute="height" id="E7J-ri-7Ar"/>
+                <constraint firstAttribute="trailing" secondItem="qhn-SB-HHl" secondAttribute="trailing" id="Gq6-DF-g6Z"/>
+                <constraint firstItem="4Sk-re-UHX" firstAttribute="centerY" secondItem="WUw-MF-K1b" secondAttribute="centerY" id="HFW-rD-MNw"/>
+                <constraint firstItem="WUw-MF-K1b" firstAttribute="leading" secondItem="gWs-2X-45L" secondAttribute="trailing" id="IKC-AV-eZ5"/>
+                <constraint firstItem="WUw-MF-K1b" firstAttribute="height" secondItem="gWs-2X-45L" secondAttribute="height" id="Imr-VZ-MdM"/>
+                <constraint firstItem="gWs-2X-45L" firstAttribute="top" secondItem="GL2-QK-i18" secondAttribute="top" id="LS3-kq-NLW"/>
+                <constraint firstItem="4Sk-re-UHX" firstAttribute="width" secondItem="WUw-MF-K1b" secondAttribute="width" id="ODE-Jt-n0u"/>
+                <constraint firstItem="qhn-SB-HHl" firstAttribute="top" secondItem="4Sk-re-UHX" secondAttribute="top" id="S9u-Sf-hjb"/>
+                <constraint firstItem="qhn-SB-HHl" firstAttribute="centerY" secondItem="4Sk-re-UHX" secondAttribute="centerY" id="WGq-E1-cO6"/>
+                <constraint firstItem="4Sk-re-UHX" firstAttribute="bottom" secondItem="WUw-MF-K1b" secondAttribute="bottom" id="ZpZ-rZ-agx"/>
+                <constraint firstItem="WUw-MF-K1b" firstAttribute="centerY" secondItem="gWs-2X-45L" secondAttribute="centerY" id="cT0-Ce-5bY"/>
+                <constraint firstItem="WUw-MF-K1b" firstAttribute="top" secondItem="gWs-2X-45L" secondAttribute="top" id="d3y-Mj-ABI"/>
+                <constraint firstItem="qhn-SB-HHl" firstAttribute="bottom" secondItem="4Sk-re-UHX" secondAttribute="bottom" id="eKX-TQ-srT"/>
+                <constraint firstItem="qhn-SB-HHl" firstAttribute="height" secondItem="4Sk-re-UHX" secondAttribute="height" id="fE6-0o-Hxc"/>
+                <constraint firstItem="WUw-MF-K1b" firstAttribute="bottom" secondItem="gWs-2X-45L" secondAttribute="bottom" id="im0-Rj-Qex"/>
+                <constraint firstItem="qhn-SB-HHl" firstAttribute="leading" secondItem="4Sk-re-UHX" secondAttribute="trailing" id="jiS-uq-njY"/>
+                <constraint firstItem="WUw-MF-K1b" firstAttribute="width" secondItem="gWs-2X-45L" secondAttribute="width" id="ovz-Bk-h11"/>
+                <constraint firstAttribute="bottom" secondItem="gWs-2X-45L" secondAttribute="bottom" id="wIF-Ae-YWg"/>
+                <constraint firstItem="4Sk-re-UHX" firstAttribute="top" secondItem="WUw-MF-K1b" secondAttribute="top" id="xPg-mh-XMU"/>
+            </constraints>
+            <point key="canvasLocation" x="181" y="144"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Attention_Select.png" width="22" height="22"/>
+    </resources>
+</document>

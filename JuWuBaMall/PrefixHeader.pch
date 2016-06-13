@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  JuWuBaMall
+//
+//  Created by zhanglan on 16/1/11.
+//  Copyright © 2016年 JuWuBa. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// VC
+#import "BaseNavigationController.h"
+
+// Category
+#import "UIColor+Utility.h"
+#import "NSString+Utility.h"
+#import "UIImage+Utility.h"
+#import "UILabel+Utility.h"
+#import "UIView+Utility.h"
+#import "UITableView+Utility.h"
+#import "UITextView+Utility.h"
+
+// 通用
+#import "PublicDefine.h"
+#import "PayPublicDefine.h"
+#import "AlipayHeader.h"
+
+#import "Logger.h"
+#import "AllBeans.h"
+#import "XMLDictionary.h"
+#import "FSNetworkManager.h"
+#import "BaseAlert.h"
+#import "GlobalSetting.h"
+#import "NSMutableDictionary+Utility.h"
+#import "CustomButton.h"
+
+#import <ZLLibrary/ZLLibrary.h>
+
+
+#pragma mark ------------------------------拖动ui效果开关 by chupeng
+#define kPanUISwitch 1
+
+#endif

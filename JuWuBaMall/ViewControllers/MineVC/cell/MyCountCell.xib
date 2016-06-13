@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyCountCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-qj-0nf">
+                        <rect key="frame" x="18" y="29.5" width="100" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Qyn-E3-bjG"/>
+                            <constraint firstAttribute="width" constant="100" id="uaR-Vl-Bdc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cH-DH-Bji">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfv-H6-K4W">
+                        <rect key="frame" x="242" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="M3T-mN-tay"/>
+                            <constraint firstAttribute="width" constant="70" id="Xo9-4l-LvG"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="Avator.png"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rfv-H6-K4W" firstAttribute="leading" secondItem="6cH-DH-Bji" secondAttribute="trailing" constant="-78" id="2BM-dS-SCF"/>
+                    <constraint firstItem="rfv-H6-K4W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="5vH-lh-WdZ"/>
+                    <constraint firstItem="t8M-qj-0nf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="G6C-pS-a4t"/>
+                    <constraint firstItem="t8M-qj-0nf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="QNx-fS-Knw"/>
+                    <constraint firstItem="6cH-DH-Bji" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hJo-mx-9QD"/>
+                    <constraint firstAttribute="trailing" secondItem="rfv-H6-K4W" secondAttribute="trailing" constant="8" id="m9w-Zp-qjK"/>
+                    <constraint firstAttribute="bottom" secondItem="6cH-DH-Bji" secondAttribute="bottom" id="nJc-8A-EUg"/>
+                    <constraint firstItem="6cH-DH-Bji" firstAttribute="leading" secondItem="t8M-qj-0nf" secondAttribute="trailing" constant="-118" id="uT2-NE-czv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backGroundButton" destination="6cH-DH-Bji" id="h0f-W8-xhC"/>
+                <outlet property="headImgButton" destination="rfv-H6-K4W" id="NlO-as-dIh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Avator.png" width="100" height="100"/>
+    </resources>
+</document>

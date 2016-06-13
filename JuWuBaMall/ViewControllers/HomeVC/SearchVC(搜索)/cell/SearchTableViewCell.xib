@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SearchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adErrorImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="AZj-ps-Jmb">
+                        <rect key="frame" x="10" y="10" width="80" height="79.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="ygo-jx-dMb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国大瓷砖抛光砖区仿大理石文案瓦片极好的" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m4-DM-Agx">
+                        <rect key="frame" x="100" y="10" width="215" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Q8X-HZ-PRz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥：122.00元／片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50O-4y-tHL">
+                        <rect key="frame" x="100" y="68" width="210" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="KCU-Dk-EXv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公司:中国瓷砖商场" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPm-AM-iA2">
+                        <rect key="frame" x="100" y="45" width="210" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.87058823529999996" green="0.36078431370000003" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="AZj-ps-Jmb" secondAttribute="bottom" constant="10" id="16c-ht-BKF"/>
+                    <constraint firstItem="AZj-ps-Jmb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="19t-dW-OCg"/>
+                    <constraint firstItem="EPm-AM-iA2" firstAttribute="top" secondItem="6m4-DM-Agx" secondAttribute="bottom" id="4TD-2K-2d5"/>
+                    <constraint firstAttribute="trailing" secondItem="50O-4y-tHL" secondAttribute="trailing" constant="10" id="Ae9-8Z-IgP"/>
+                    <constraint firstItem="6m4-DM-Agx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FDM-Zs-ILa"/>
+                    <constraint firstItem="EPm-AM-iA2" firstAttribute="leading" secondItem="AZj-ps-Jmb" secondAttribute="trailing" constant="10" id="GFW-ip-1wT"/>
+                    <constraint firstAttribute="trailing" secondItem="EPm-AM-iA2" secondAttribute="trailing" constant="10" id="I5Q-ui-2n1"/>
+                    <constraint firstItem="AZj-ps-Jmb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="KwZ-oL-ech"/>
+                    <constraint firstAttribute="trailing" secondItem="6m4-DM-Agx" secondAttribute="trailing" constant="5" id="PVQ-5R-c03"/>
+                    <constraint firstItem="50O-4y-tHL" firstAttribute="leading" secondItem="AZj-ps-Jmb" secondAttribute="trailing" constant="10" id="QgW-tY-KrE"/>
+                    <constraint firstItem="6m4-DM-Agx" firstAttribute="leading" secondItem="AZj-ps-Jmb" secondAttribute="trailing" constant="10" id="evQ-5M-RJI"/>
+                    <constraint firstAttribute="bottom" secondItem="50O-4y-tHL" secondAttribute="bottom" constant="10" id="gmP-nr-H7x"/>
+                    <constraint firstItem="50O-4y-tHL" firstAttribute="top" secondItem="EPm-AM-iA2" secondAttribute="bottom" id="pBc-f1-mbc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="companyName" destination="EPm-AM-iA2" id="vwx-Gz-Cfs"/>
+                <outlet property="iconImgeView" destination="AZj-ps-Jmb" id="U0L-4V-YjB"/>
+                <outlet property="priceLabel" destination="50O-4y-tHL" id="3b6-4i-Km4"/>
+                <outlet property="titleLabel" destination="6m4-DM-Agx" id="kG8-dC-mJ7"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="adErrorImage.png" width="300" height="200"/>
+    </resources>
+</document>
